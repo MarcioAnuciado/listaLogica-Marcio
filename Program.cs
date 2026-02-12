@@ -78,20 +78,32 @@
 
 #region Validação de login Simples
 
-string usuarioLogin = "Admin";
-int usuarioPassword = 1234;
+//string usuarioLogin = "Admin";
+//int usuarioPassword = 1234;
 
-Console.Write("Digite seu nome de usário: ");
-String usuarioInput = Console.ReadLine();
-Console.Write("Digite seu senha: ");
-int passwordInput = int.Parse(Console.ReadLine());
+//Console.Write("Digite seu nome de usário: ");
+//String usuarioInput = Console.ReadLine();
+//Console.Write("Digite seu senha: ");
+//int passwordInput = int.Parse(Console.ReadLine());
 
-if (usuarioInput == usuarioLogin && passwordInput == usuarioPassword)
+//if (usuarioInput == usuarioLogin && passwordInput == usuarioPassword)
+//{
+//    Console.WriteLine("Login bem-sucedido! Bem-vindo, " + usuarioInput + "!");
+//}
+//else
+//{
+//    Console.WriteLine("Login falhou! Nome de usuário ou senha incorretos.");
+//}
+#endregion
+
+//Nivel 3: Estruturas de Repetição (loops)
+#region Contagem regressiva
+
+int contador = 11;
+
+for (int i = 0; i < 10; i++)
 {
-    Console.WriteLine("Login bem-sucedido! Bem-vindo, " + usuarioInput + "!");
-}
-else
-{
-    Console.WriteLine("Login falhou! Nome de usuário ou senha incorretos.");
+    contador--;
+    Console.WriteLine(contador);
 }
 #endregion
