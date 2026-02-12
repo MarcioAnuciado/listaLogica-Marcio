@@ -39,22 +39,39 @@
 //Nivel 2: Estruturas Condicionais(if, else if, else)
 #region Verificador de Maioridade
 
-Console.WriteLine("Digite sua idade: ");
-int idade = int.Parse(Console.ReadLine());
+//Console.WriteLine("Digite sua idade: ");
+//int idade = int.Parse(Console.ReadLine());
 
-if (idade >= 18)
-{
-    Console.WriteLine("Você é maior de idade.");
-}
-else
-{
-    Console.WriteLine("Você é menor de idade.");
-}
+//if (idade >= 18)
+//{
+//    Console.WriteLine("Você é maior de idade.");
+//}
+//else
+//{
+//    Console.WriteLine("Você é menor de idade.");
+//}
 
 #endregion
 
 #region Classificador de Números
+Console.Write("Digite um número inteiro: ");
+int numero = int.Parse(Console.ReadLine());
 
+if (numero % 2 == 0 && numero > 0) 
+{
+    Console.WriteLine("O numero " + numero + " é pár e positivo");
+} else if (numero % 2 == 1 && numero > 0)
+{
+    Console.WriteLine("O numero " + numero + " é impar e positivo");
+}
+else if (numero < 0)
+{
+     Console.WriteLine(numero + " é negativo");
+}
+else
+{
+     Console.WriteLine("É zero");
+}
 
 #endregion
 
